@@ -22,7 +22,9 @@ header {
     align-items: center;
     justify-content: center;
     gap: 80px;
+
 }
+
 
 .perfil img {
     width: 220px;
@@ -203,4 +205,55 @@ hr {
     background-color: #E0E0E0;
     width: 1000px;
     margin-right: 90px;
+}
+
+@media (max-width: 600px) {
+
+    .perfil {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .info {
+        width: 90%;
+    }
+
+    .perfil img {
+        order: -1;
+        width: 160px;
+        height: 160px;
+    }
+
+    h2 {
+        text-align: center;
+        margin-left: 0 !important;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90% !important;
+        height: auto;
+    }
+
+    #experiencias {
+        margin-left: 0 !important;
+        padding: 0 20px;
+    }
+
+    .linha {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    hr {
+        width: 90%;
+        margin: 20px auto;
+    }
 }
